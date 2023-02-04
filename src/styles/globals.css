@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    ._win10{
+        background-image: url("../../public/win10.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+    body{
+        @apply overflow-hidden
+    }
+    ._icon{
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    ._icon-parent{
+        @apply hover:bg-opacity-10 bg-opacity-0 bg-white transition-all
+    }
+}
