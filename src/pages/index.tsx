@@ -9,13 +9,13 @@ const Home: NextPage = () => {
 
   const [Tabs, setTabs] = useState([]);
 
-  //Disable Right-Click
-  // useEffect(() => {
-  //   const handleContextmenu = (e: any) => {
-  //       e.preventDefault()
-  //   }
-  //   document.addEventListener('contextmenu', handleContextmenu)
-  // }, [ ])
+  // Disable Right-Click
+  useEffect(() => {
+    const handleContextmenu = (e: any) => {
+        e.preventDefault()
+    }
+    document.addEventListener('contextmenu', handleContextmenu)
+  }, [ ])
   function sla(){
 
   }

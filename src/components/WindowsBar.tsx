@@ -4,7 +4,7 @@ import win10 from "../../public/Icons/win10.svg"
 import bubble from "../../public/Icons/bubble.png"
 
 type PageProps = {
-  func: () => void,
+  func: Function,
   tabs: Array<any>
 }
 
