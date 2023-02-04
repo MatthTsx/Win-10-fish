@@ -7,7 +7,7 @@ import { api } from "../utils/api";
 const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
 
-  const [Tabs, setTabs] = useState([]);
+  const [Tabs, setTabs] = useState<Array<String>>([]);
 
   // Disable Right-Click
   useEffect(() => {
@@ -16,16 +16,14 @@ const Home: NextPage = () => {
     }
     document.addEventListener('contextmenu', handleContextmenu)
   }, [ ])
-  function sla(){
 
-  }
   return (
     <div className="w-full h-screen _win10 flex flex-col justify-between" contextMenu={"a"}>
       <div className="overflow-hidden w-full h-full">
         <div></div>
         
       </div>
-      <WindowsBar func={sla} tabs={Tabs}/>
+      <WindowsBar func={setTabs} tabs={Tabs}/>
     </div>
   );
 };

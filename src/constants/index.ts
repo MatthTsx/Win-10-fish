@@ -1,7 +1,7 @@
 
 const getHref = (url:string) => {
     const image = require(`../../public/Icons/${url}`)
-    return image.default.src
+    return image.default.src || ""
 }
 
 export const Icons = [

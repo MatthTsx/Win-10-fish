@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { Dispatch, SetStateAction } from 'react'
 import { Icons } from '../constants'
 import win10 from "../../public/Icons/win10.svg"
 import bubble from "../../public/Icons/bubble.png"
 
 type PageProps = {
-  func: Function,
-  tabs: Array<any>
+  func: Dispatch<SetStateAction<String[]>>,
+  tabs: Array<String>
 }
 
 function WindowsBar({func, tabs} : PageProps) {
