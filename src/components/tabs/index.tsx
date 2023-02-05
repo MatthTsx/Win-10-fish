@@ -1,5 +1,6 @@
 import React from 'react'
 import Folder from './folder'
+import Google from './google'
 
 interface props{
   type: String,
@@ -11,7 +12,7 @@ function Tab({type, selected} : props) {
     <div className={`absolute ${selected == type && 'z-[10000]'} h-full w-full`}>
       {type == "folder"?
       <Folder/>
-      :<div className='w-full h-full bg-blue-500'>aaa</div>}
+      :<Google/>}
     </div>
   )
 }

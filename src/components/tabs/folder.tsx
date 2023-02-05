@@ -8,7 +8,7 @@ import Part4 from '../folder/Part4'
 function Folder() {
   return (
     <div className={`w-[50rem] h-[35rem] bg-white flex
-    relative top-12 left-32 flex-col`}>
+    relative top-12 left-32 flex-col border-2 border-blue-500/20`}>
         <div className='w-full h-8 flex justify-between items-center'>
             <div className='flex h-full items-center space-x-3'>
                 <div className='w-9 h-4 flex justify-center items-center border-r-[1px] border-black/40'>

@@ -24,10 +24,6 @@ const Home: NextPage = () => {
   //   document.addEventListener('contextmenu', handleContextmenu)
   // }, [ ])
 
-  useEffect(() => {
-    console.log(selected)
-  }, [ selected ])
-
   return (
     <div className="w-full h-screen _win10 flex flex-col justify-between" contextMenu={"a"}>
       <div className="overflow-hidden w-full h-full relative">

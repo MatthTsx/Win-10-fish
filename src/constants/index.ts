@@ -24,3 +24,12 @@ export const folders = [
     {href: getHref("folder_5.png"), desc: "Music"},
     {href: getHref("folder_6.png"), desc: "Videos"},
 ]
+
+export const NodeTexts = [
+    "Home","About","Downloads","Docs","Get Involved","Security","certification","news"
+]
+
+export const NodeTerms = [
+    "The OpenJS Foundation","Terms of Use","Privacy Policy","Bylaws","Code of Conduct","Trademark Policy",
+    "Trademark List","Cookie Policy","Edit On GitHub"
+]
