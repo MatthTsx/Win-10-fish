@@ -12,6 +12,7 @@ function Node() {
                     border-white/40 ${i==0 && 'border-l-0'}`}>{node}</p>
                 ))}
             </div>
+            {/* TODO: Buttons */}
             <div>aaadwad</div>
         </div>
         <div className="w-full h-[30rem] flex justify-center pt-8">

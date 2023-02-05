@@ -32,6 +32,7 @@ function Google() {
                     </div>
                 ))}
             </div>
+            {/* TODO: Exit, etc buttons */}
             <div></div>
         </div>
         <div className='w-full h-9 border-b-[1px] shadow-sm flex relative px-5 items-center'>
