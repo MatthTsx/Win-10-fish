@@ -11,11 +11,11 @@ function Time() {
 
     useEffect(() => {
         sleep(10000).then(() => {
-            let data = new Date(Date.now())
+            const data = new Date(Date.now())
             const array_day = data.toDateString().split(" ")
 
-            let time = data.getHours() +":"+ data.getMinutes()
-            let day = array_day[2]+"-"+array_day[1]+"-"+array_day[3]?.slice(2)
+            const time = data.getHours().toString() +":"+ data.getMinutes().toString()
+            const day = array_day[2]?.toString() +"-"+ array_day[1]?.toString() +"-"+ array_day[3]?.slice(2).toString()
 
             setDate({time, day})
         })
