@@ -7,13 +7,26 @@ import net from "../../public/Icons/net2.png"
 import som from "../../public/Icons/som.png"
 import energy from "../../public/Icons/energy.png"
 import {Lang, LittleIcon, Time} from './Icons/'
+import { tabs } from '../pages'
 
 type PageProps = {
-  func: Dispatch<SetStateAction<String[]>>,
-  tabs: Array<String>
+  func: Dispatch<SetStateAction<tabs>>,
+  tabs: tabs,
+  select: Dispatch<SetStateAction<String>>,
 }
 
-function WindowsBar({func, tabs} : PageProps) {
+function WindowsBar({func, tabs, select} : PageProps) {
+
+
+  function Tab(tab_name: string){
+    select(tab_name)
+    if(tabs.some(tab => tab.name == tab_name)){
+      return
+    }
+
+    func([...tabs, {name: tab_name, maxed: true}])
+    console.log("adicionado")
+  }
 
   return (
     <div className='w-full h-10 bg-[#0c0c0c] flex items-center z-[1000000000] justify-between'>
@@ -30,7 +43,15 @@ function WindowsBar({func, tabs} : PageProps) {
         </div>
 
         {Icons.map((icon,i) => (
-            <div className='_icon-parent-full' key={i}>
+            <div className='_icon-parent-full' key={i}
+            onClick={() => {
+              if(!icon.tab) return
+              Tab(icon.tab)
+            }}
+            >
+              {icon.tab && tabs.some(tab => tab.name == icon.tab) &&
+              <div className='bg-white/50 w-[80%] h-0.5 rounded-full absolute bottom-0'/>
+              }
               <div className='absolute w-6 h-6 _icon'
               style={{
                 backgroundImage: `url('${icon.href}')`

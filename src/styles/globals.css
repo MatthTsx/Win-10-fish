@@ -5,6 +5,7 @@
 @layer components{
     * > *{
         font-family: Arial Narrow;
+        cursor: default
     }
 
     ._win10{
@@ -30,5 +31,19 @@
     ._time-text{
         @apply text-[0.75rem] text-white/80 cursor-default;
         font-weight: 100
+    }
+
+
+    ._anima{
+        color:purple;
+        animation: .3s _animation1 ease-in;
+    }
+    @keyframes _animation1{
+        0%{bottom: -20rem; scale: 0.2}
+        100%{bottom: 0; scale:1}
+    }
+
+    ._folder-text{
+        @apply text-blue-700 tracking-tight
     }
 }

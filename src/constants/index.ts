@@ -12,6 +12,15 @@ const getHref = (url:string) => {
 export const Icons = [
     {href: getHref("circle.png")},
     {href: getHref("table.png")},
-    {href: getHref("google.png")},
-    {href: getHref("folder.png")},
+    {href: getHref("google.png"),tab:"google"},
+    {href: getHref("folder.png"),tab:"folder"},
+]
+
+export const folders = [
+    {href: getHref("folder_1.png")},
+    {href: getHref("folder_1.png")},
+    {href: getHref("folder_1.png")},
+    {href: getHref("folder_1.png")},
+    {href: getHref("folder_1.png")},
+    {href: getHref("folder_1.png")},
 ]
