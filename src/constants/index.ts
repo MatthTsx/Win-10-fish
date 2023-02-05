@@ -10,6 +10,8 @@ const getHref = (url:string) => {
 }
 
 export const Icons = [
+    {href: getHref("circle.png")},
+    {href: getHref("table.png")},
     {href: getHref("google.png")},
     {href: getHref("folder.png")},
 ]

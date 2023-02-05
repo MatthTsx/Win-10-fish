@@ -1,9 +1,15 @@
 import React from 'react'
 
-function index() {
+interface props{
+  type: string
+}
+
+function Tab({type} : props) {
   return (
-    <div>index</div>
+    <div className=''>
+      Aaaa
+    </div>
   )
 }
 
-export default index
+export default Tab

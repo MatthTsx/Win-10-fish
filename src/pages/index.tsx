@@ -10,12 +10,12 @@ const Home: NextPage = () => {
   const [Tabs, setTabs] = useState<Array<String>>([]);
 
   // Disable Right-Click
-  useEffect(() => {
-    const handleContextmenu = (e: any) => {
-        e.preventDefault()
-    }
-    document.addEventListener('contextmenu', handleContextmenu)
-  }, [ ])
+  // useEffect(() => {
+  //   const handleContextmenu = (e: any) => {
+  //       e.preventDefault()
+  //   }
+  //   document.addEventListener('contextmenu', handleContextmenu)
+  // }, [ ])
 
   return (
     <div className="w-full h-screen _win10 flex flex-col justify-between" contextMenu={"a"}>

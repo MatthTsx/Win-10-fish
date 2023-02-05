@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components{
+    * > *{
+        font-family: Arial Narrow;
+    }
+
     ._win10{
         background-image: url("../../public/win10.jpg");
         background-attachment: fixed;
@@ -18,5 +22,13 @@
     }
     ._icon-parent{
         @apply hover:bg-opacity-10 bg-opacity-0 bg-white transition-all
+    }
+    ._icon-parent-full{
+        @apply w-12 h-10 relative flex justify-center items-center px-1
+        hover:bg-opacity-10 bg-opacity-0 bg-white transition-all
+    }
+    ._time-text{
+        @apply text-[0.75rem] text-white/80 cursor-default;
+        font-weight: 100
     }
 }
