@@ -20,7 +20,7 @@ function Google() {
         <div className='w-full h-8 bg-[#dddddd] flex justify-between pt-1'>
             <div className='flex h-full items-center ml-3'>
                 {tabs.map((tab, index) => (
-                    <div className='flex items-center h-full bg-white w-52 rounded-t-md justify-between'>
+                    <div className='flex items-center h-full bg-white w-52 rounded-t-md justify-between' key={index}>
                         <div className='flex items-center h-full px-2 space-x-1'>
                             <div className='_icon w-4 h-4' style={{ backgroundImage: `url(${tab.href})` }}/>
                             <p className='text-[0.8rem] mt-0.5'>{tab.name}</p>
